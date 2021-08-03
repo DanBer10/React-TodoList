@@ -1,19 +1,4 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -24,15 +9,97 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.inner-container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+  font-size: 0.8rem;
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  transition: 0.4s ease;
+  background: transparent;
+  box-shadow: 0 4px 18px rgb(230 228 230 / 25%), 0px 1px 1px rgb(255 255 255 / 22%);
+  color: snow;
+}
+
+.add {
+  margin-left: 20px;
+  width: 50%;
+}
+
+#delete:hover {
+  background-color: red;
+}
+
+#edit:hover {
+  background-color: rgb(226, 226, 21);
+}
+
+
+
+.btn:hover {
+  background-color: lightgreen;
+}
+
+.input-field {
+  padding: 10px 25px;
+  width: 100%;
+  background: transparent;
+  color: snow;
+  border: 0.5px solid snow;
+  border-radius: 8px;
+}
+
+.submit-change {
+  margin-top: 50px;
+  width: -webkit-fill-available;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin-top: 40px;
+  box-shadow: 0 4px 18px rgb(230 228 230 / 25%), 0px 1px 1px rgb(255 255 255 / 22%);
+  border-radius: 8px;
+  height: 100px;
+  max-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.card-text {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.card-text > div {
+  word-wrap: break-word;
+  text-overflow: clip;
+}
+
+.checkboxen {
+  width: 35px;
+  height: 20px;
+}
+
+.btn-container {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.todo-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
