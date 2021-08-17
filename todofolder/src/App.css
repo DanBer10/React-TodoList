@@ -7,8 +7,13 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin: 0;
+  padding: 0;
 }
 
+.head-title {
+  margin-bottom: 200px;
+}
 .inner-container {
   max-width: 800px;
   margin: 0 auto;
@@ -22,13 +27,18 @@
   border: none;
   transition: 0.4s ease;
   background: transparent;
-  box-shadow: 0 4px 18px rgb(230 228 230 / 25%), 0px 1px 1px rgb(255 255 255 / 22%);
+  box-shadow: 0 1px 1px rgb(230 228 230 / 25%),
+    0px 1px 1px rgb(255 255 255 / 22%);
   color: snow;
 }
 
 .add {
   margin-left: 20px;
   width: 50%;
+  max-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #delete:hover {
@@ -37,16 +47,15 @@
 
 #edit:hover {
   background-color: rgb(226, 226, 21);
+  color: black;
 }
-
-
 
 .btn:hover {
   background-color: lightgreen;
 }
 
 .input-field {
-  padding: 10px 25px;
+  padding: 5px 15px;
   width: 100%;
   background: transparent;
   color: snow;
@@ -66,14 +75,15 @@
 
 .card {
   margin-top: 40px;
-  box-shadow: 0 4px 18px rgb(230 228 230 / 25%), 0px 1px 1px rgb(255 255 255 / 22%);
+  box-shadow: 0 1px 3px rgb(255 244 244 / 12%), 0 1px 2px rgb(253 254 255);
   border-radius: 8px;
-  height: 100px;
-  max-height: 400px;
+  height: 130px;
+  max-height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 30px;
+  font-size: 1.5rem;
 }
 
 .card-text {
@@ -88,8 +98,9 @@
 }
 
 .checkboxen {
-  width: 35px;
+  width: 20px;
   height: 20px;
+  margin-left: 10px;
 }
 
 .btn-container {
